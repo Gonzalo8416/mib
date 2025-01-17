@@ -7,7 +7,7 @@
 .home::-webkit-scrollbar {
   width: 2px;     /* Tamaño del scroll en vertical */
   height: 8px;    /* Tamaño del scroll en horizontal */
-    /* display: none;Ocultar scroll */
+  display: none;  /* Ocultar scroll */
 }
 .home::-webkit-scrollbar-thumb {
   background: #666;

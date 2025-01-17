@@ -1,0 +1,13 @@
+.aliens-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap:0.5rem;
+  .filter-input{
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border:none;
+    border-radius: 25px;
+    margin: 8px 0;
+  }
+}

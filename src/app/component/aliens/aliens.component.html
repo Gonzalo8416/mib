@@ -1,0 +1,34 @@
+<div class="aliens-container">
+  <!-- Input para el filtro -->
+  <input
+    type="text"
+    placeholder="Buscar por nombre o ciudad"
+    [formControl]="searchTerm"
+    (input)="filterAliens()"
+    class="filter-input"
+  />
+
+  <!-- Lista de aliens -->
+   @if(filteredAliens.length > 0){
+
+     <div>
+      @for(alien of filteredAliens; track alien.name){
+
+        <div class="alien-card">
+          <img [src]="alien.humanImg" [alt]="alien.name" class="alien-image" />
+          <div class="alien-details">
+            <h3>{{ alien.name }}</h3>
+            <p><strong>Ciudad:</strong> {{ alien.city }}</p>
+            <p><strong>Recompensa:</strong> {{ alien.reward }}</p>
+            <p><strong>Peligrosidad:</strong> {{ alien.danger }}</p>
+          </div>
+        </div>
+      }
+     </div>
+
+     <!-- Mensaje para cuando no hay resultados -->
+     <ng-template #noResults>
+       <p>No se encontraron resultados para "{{ searchTerm }}".</p>
+     </ng-template>
+    }
+  </div>

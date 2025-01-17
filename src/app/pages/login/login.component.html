@@ -1,0 +1,16 @@
+<section class="login">
+  <figure>
+
+  </figure>
+  <form action="">
+    <p>Tienes potencial, <br>¿Cuál es tu nombre?  </p>
+
+    <input type="text" [formControl]="inputName">
+    <button type="button" (click)="login()">Continuar</button>
+    @if(errorMessage){
+      <p class="error-msn">
+        Debes escribir tu nombre
+      </p>
+    }
+  </form>
+</section>

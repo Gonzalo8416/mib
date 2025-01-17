@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="infoHeader">
+    <figure>
+      <img src="img/logoMIBHome.svg" alt="">
+    </figure>
+    <aside>
+      <span>Agente {{ agentName }}</span>
+      <img src="icons/iconAgent.svg" alt="">
+      <button>
+        <img src="icons/menu.svg" alt="">
+      </button>
+    </aside>
+  </div>
+  <nav>
+    <a (click)="setActiveComponent('fugitivos')" [class.active]="isActiveClass('fugitivos')">
+      <img src="icons/iconAliens.svg" alt="">
+      <p>Fugitivos</p>
+    </a>
+    <a (click)="setActiveComponent('agentes')" [class.active]="isActiveClass('agentes')">
+      <img src="icons/iconAgents.svg" alt="">
+      <p>Agentes</p>
+    </a>
+    <a (click)="setActiveComponent('historia')" [class.active]="isActiveClass('historia')">
+      <img src="icons/iconHistory.svg" alt="">
+      <p>Historia MIB</p>
+    </a>
+    <a (click)="setActiveComponent('foro')" [class.active]="isActiveClass('foro')">
+      <img src="icons/iconForo.svg" alt="">
+      <p>Foro</p>
+    </a>
+  </nav>
+</header>

@@ -1,0 +1,117 @@
+import { Alien } from '../interface/alien.interface';
+
+
+export const aliens:Alien[] = [
+    {
+      name: "Carl Stuard",
+      humanImg: "https://example.com/human-carl.jpg",
+      alienImg: "https://example.com/alien-carl.jpg",
+      origin: "Polo, Centurion IV",
+      city: "Boston EU",
+      reward: "500",
+      danger: "Nivel 7",
+      planetImg: "https://example.com/planet-centurion.jpg",
+      planet: "Centurion IV",
+      system: "Sistema Andrómeda",
+      species: "Armudariano",
+      description:
+        "Carl Stuard es un fugitivo intergaláctico buscado por múltiples crímenes cometidos en distintos sistemas estelares. Es conocido por su inteligencia estratégica y habilidades para disfrazarse entre humanos. Los Armudarianos poseen la capacidad de mimetizarse y manipular campos energéticos, lo que los hace especialmente peligrosos.",
+      crimes: [
+        { year: "2018", description: "Robo de tecnología avanzada en la base científica de la NASA en Houston." },
+        { year: "2019", description: "Destrucción parcial de una nave comercial intergaláctica cerca de Proxima Centauri." },
+        { year: "2020", description: "Secuestro de un científico humano especializado en energía cuántica." },
+        { year: "2021", description: "Tráfico ilegal de cristales energéticos en el Sistema Vega." },
+        { year: "2022", description: "Intento de sabotaje de un acuerdo de paz entre el Consejo Galáctico y los habitantes de Alpha Centauri." },
+      ],
+    },
+    {
+      name: "Zyxorr B'las",
+      humanImg: "https://example.com/human-zyxorr.jpg",
+      alienImg: "https://example.com/alien-zyxorr.jpg",
+      origin: "Delta-9, Nebulosa Crux",
+      city: "Las Vegas, EU",
+      reward: "750",
+      danger: "Nivel 9",
+      planetImg: "https://example.com/planet-delta9.jpg",
+      planet: "Delta-9",
+      system: "Nebulosa Crux",
+      species: "Cruxiano",
+      description:
+        "Zyxorr es un maestro del camuflaje y experto en el uso de armas bioquímicas. Conocido por su astucia y falta de escrúpulos, ha evadido a los Hombres de Negro durante años.",
+      crimes: [
+        { year: "2015", description: "Liberación de un virus alienígena en una colonia humana en Marte." },
+        { year: "2016", description: "Extorsión al embajador galáctico de Tau Ceti." },
+        { year: "2018", description: "Ataque bioterrorista en la estación espacial Nexus IV." },
+        { year: "2020", description: "Contrabando de armas bioquímicas hacia la Tierra." },
+        { year: "2021", description: "Manipulación genética ilegal de especies terrestres." },
+      ],
+    },
+    {
+      name: "Liora Quarn",
+      humanImg: "https://example.com/human-liora.jpg",
+      alienImg: "https://example.com/alien-liora.jpg",
+      origin: "Syrris, Sistema Draco",
+      city: "París, Francia",
+      reward: "600",
+      danger: "Nivel 8",
+      planetImg: "https://example.com/planet-syrris.jpg",
+      planet: "Syrris",
+      system: "Sistema Draco",
+      species: "Syrrinita",
+      description:
+        "Liora es una experta en infiltración y sabotaje. Con habilidades telepáticas avanzadas, es capaz de manipular mentes humanas para cumplir sus objetivos.",
+      crimes: [
+        { year: "2017", description: "Robo de secretos militares en el Pentágono." },
+        { year: "2018", description: "Destrucción de una planta de energía en Júpiter." },
+        { year: "2019", description: "Espionaje en el Consejo Galáctico." },
+        { year: "2021", description: "Sabotaje de la misión espacial Apolo-Nova." },
+        { year: "2023", description: "Control mental de líderes mundiales para influir en políticas globales." },
+      ],
+    },
+    {
+      name: "Threx Orvax",
+      humanImg: "https://example.com/human-threx.jpg",
+      alienImg: "https://example.com/alien-threx.jpg",
+      origin: "Gorath, Sistema Omegus",
+      city: "Tokio, Japón",
+      reward: "850",
+      danger: "Nivel 10",
+      planetImg: "https://example.com/planet-gorath.jpg",
+      planet: "Gorath",
+      system: "Sistema Omegus",
+      species: "Gorathiano",
+      description:
+        "Threx es un criminal intergaláctico altamente peligroso. Posee una fuerza sobrehumana y un temperamento volátil, lo que lo convierte en una amenaza para cualquier especie.",
+      crimes: [
+        { year: "2016", description: "Asesinato de un diplomático en la Luna de Io." },
+        { year: "2017", description: "Destrucción de un satélite galáctico estratégico." },
+        { year: "2018", description: "Secuestro de un grupo de colonos espaciales en Titán." },
+        { year: "2019", description: "Extorsión masiva a colonias en el Sistema Solar." },
+        { year: "2022", description: "Intento de golpe de estado en la Alianza Estelar." },
+      ],
+    },
+    {
+      name: "N'kila Venx",
+      humanImg: "https://example.com/human-nkila.jpg",
+      alienImg: "https://example.com/alien-nkila.jpg",
+      origin: "Yzara, Sistema Zenith",
+      city: "Ciudad de México, México",
+      reward: "400",
+      danger: "Nivel 6",
+      planetImg: "https://example.com/planet-yzara.jpg",
+      planet: "Yzara",
+      system: "Sistema Zenith",
+      species: "Zenithiano",
+      description:
+        "N'kila es una traficante de información con conexiones en casi todos los sistemas conocidos. Su carisma y habilidad para negociar la han mantenido un paso por delante de las autoridades.",
+      crimes: [
+        { year: "2015", description: "Venta de información clasificada del Consejo Galáctico." },
+        { year: "2017", description: "Robo de datos de la base estelar Andrómeda II." },
+        { year: "2019", description: "Difusión de propaganda falsa en el Sistema Orion." },
+        { year: "2021", description: "Falsificación de identidades estelares." },
+        { year: "2023", description: "Coordinación de una red de espionaje en la Tierra." },
+      ],
+    },
+  ];
+
+

@@ -1,0 +1,18 @@
+<main class="home">
+  <app-header [activeComponent]="activeComponent" (activeComponentChange)="activeComponent = $event"></app-header>
+  <section class="content">
+    @if(activeComponent === 'fugitivos'){
+      <app-aliens></app-aliens>
+    }
+    @if(activeComponent === 'agentes'){
+      <div>agentes</div>
+    }
+    @if(activeComponent === 'historia'){
+      <div>historia</div>
+    }
+    @if(activeComponent === 'foro'){
+      <div>foro</div>
+    }
+  </section>
+</main>
+

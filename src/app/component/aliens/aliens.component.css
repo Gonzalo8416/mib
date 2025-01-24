@@ -1,7 +1,7 @@
 .aliens-container{
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  width: 100%;
   gap:0.5rem;
   .filter-input{
     width: 100%;
@@ -9,5 +9,53 @@
     border:none;
     border-radius: 25px;
     margin: 8px 0;
+    background: #d3d3d3 url('/icons/search.svg') no-repeat right 10px center;
+    background-size: 20px 20px;
+    outline: none;
+  }
+  .alien-card{
+    display: flex;
+    padding: 12px 4px 18px 4px;
+    gap:8px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #353535;
+    & img{
+      height: 70px;
+    }
+    .alien-details{
+      & h3{
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding-bottom: 4px;
+      }
+      & p{
+        font-size: 0.8rem;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 2px 0;
+        & img{
+          height: 15px;
+        }
+      }
+    }
+    .alien-reward{
+      text-align: end;
+      display: flex;
+      flex-direction: column;
+      gap:12px;
+      & p{
+        font-size: 0.7rem;
+        font-weight: 300;
+        & span{
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .alien-card:last-child:last-child{
+    border-bottom: none;
   }
 }

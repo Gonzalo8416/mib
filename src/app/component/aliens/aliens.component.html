@@ -14,13 +14,16 @@
      <div>
       @for(alien of filteredAliens; track alien.name){
 
-        <div class="alien-card">
+        <div class="alien-card" routerLink="/alien/{{ alien.name }}">
           <img [src]="alien.humanImg" [alt]="alien.name" class="alien-image" />
           <div class="alien-details">
             <h3>{{ alien.name }}</h3>
-            <p><strong>Ciudad:</strong> {{ alien.city }}</p>
-            <p><strong>Recompensa:</strong> {{ alien.reward }}</p>
-            <p><strong>Peligrosidad:</strong> {{ alien.danger }}</p>
+            <p><strong><img src="icons/home.svg" alt=""></strong> {{ alien.origin }}</p>
+            <p><strong><img src="icons/location.svg" alt=""></strong> {{ alien.city }}</p>
+          </div>
+          <div class="alien-reward">
+            <p>Recompensa <br><span>{{ alien.reward }}</span></p>
+            <p>Peligro <br><span>{{ alien.danger }}</span></p>
           </div>
         </div>
       }

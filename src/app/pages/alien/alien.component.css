@@ -1,0 +1,9 @@
+img-comparison-slider {
+  --divider-width: 2px;
+  --divider-color: #202020;
+  --default-handle-opacity: 1;
+  --handle-position-start:50%;
+  --default-handle-color: #202020;
+  --default-handle-shadow:0px 0px 1px rgba(0, 0, 0, 1);
+  --default-handle-background:#000;
+}

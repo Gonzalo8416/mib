@@ -1,12 +1,11 @@
 <section class="login">
   <figure>
-
+    <img ngSrc="/img/logoLogin.svg" alt="" width="140" height="90">
   </figure>
-  <form action="">
+  <form (submit)="login($event)">
     <p>Tienes potencial, <br>¿Cuál es tu nombre?  </p>
-
     <input type="text" [formControl]="inputName">
-    <button type="button" (click)="login()">Continuar</button>
+    <button type="submit">Continuar</button>
     @if(errorMessage){
       <p class="error-msn">
         Debes escribir tu nombre

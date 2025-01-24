@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { aliens } from '../../util/aliens.util';
 import { Alien } from '../../interface/alien.interface';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-aliens',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './aliens.component.html',
   styleUrl: './aliens.component.css'
 })

@@ -3,6 +3,8 @@
   flex-direction: column;
   height: 600px;
   max-height: 100dvh;
+  background: url('/img/introBackground.webp') center center;
+  background-size: cover;
   .introText{
     padding: 20px;
     font-size: 0.9rem;

@@ -50,6 +50,7 @@ nav a{
   text-decoration: none;
   color: #353535;
   gap:10px;
+  cursor: pointer;
   & img{
     height: 28px;
   }

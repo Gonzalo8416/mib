@@ -34,3 +34,7 @@
 .home::-webkit-scrollbar-track:active {
 background: #1d1d1d;
 }
+.content{
+  width: 100%;
+  padding: 10px;
+}

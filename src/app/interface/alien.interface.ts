@@ -15,6 +15,7 @@ export interface Alien {
   planet: string;
   system: string;
   species: string;
-  description: string;
+  planetDescription: string;
+  speciesDescription: string;
   crimes: Crime[];
 }

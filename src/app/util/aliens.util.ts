@@ -14,8 +14,10 @@ export const aliens:Alien[] = [
       planet: "Centurion IV",
       system: "Sistema Andrómeda",
       species: "Armudariano",
-      description:
-        "Carl Stuard es un fugitivo intergaláctico buscado por múltiples crímenes cometidos en distintos sistemas estelares. Es conocido por su inteligencia estratégica y habilidades para disfrazarse entre humanos. Los Armudarianos poseen la capacidad de mimetizarse y manipular campos energéticos, lo que los hace especialmente peligrosos.",
+      planetDescription:
+        "Un planeta cálido  ideal para la vida humana y de muchas especies Sus desiertos vibrantes están llenos de minerales energéticos, y sus oasis están rodeados por una vegetación luminosa que emite calor. Los Centurianos han desarrollado tecnologías avanzadas para aprovechar la energía solar como principal fuente de poder. Son reconocidos como maestros de la ingeniería y la estrategia, con una cultura basada en la disciplina y el honor.",
+      speciesDescription:
+        "Los Armudarianos son una raza altamente adaptativa con una biología resistente a climas extremos. Su piel tiene la capacidad de absorber radiación solar y convertirla en energía vital, lo que les permite sobrevivir en entornos hostiles. Son conocidos por su gran inteligencia táctica y su capacidad para infiltrarse en diversas culturas debido a su habilidad camaleónica para alterar su apariencia levemente.",
       crimes: [
         { year: "2018", description: "Robo de tecnología avanzada en la base científica de la NASA en Houston." },
         { year: "2019", description: "Destrucción parcial de una nave comercial intergaláctica cerca de Proxima Centauri." },
@@ -36,8 +38,9 @@ export const aliens:Alien[] = [
       planet: "Orbitaris IX",
       system: "Zorathia",
       species: "Aquarion Luminaris",
-      description:
-      "Exiliado por Rebelión: Yoka lideró una facción de su especie en contra del consejo de Orbitaris IX, en desacuerdo con las estrictas leyes de aislamiento del planeta. Este acto de rebeldía resultó en su exilio, forzándolo a buscar refugio entre las estrellas.",
+      planetDescription:
+      "Un planeta oceánico en el borde de la galaxia, cubierto en un 90% por agua salada rica en bioluminiscencia. Las pocas masas terrestres que existen son islas flotantes sostenidas por raíces gigantes que se alimentan de la energía térmica del núcleo del planeta. Las tormentas eléctricas son comunes, y el cielo siempre está cubierto por un manto de nubes brillantes. Los habitantes de Orbitaris IX viven en armonía con el entorno, adaptándose a la vida tanto en el agua como en las plataformas flotantes.",
+      speciesDescription: "Los Aquarion Luminaris son una especie anfibia dotada de branquias y pulmones, lo que les permite sobrevivir tanto bajo el agua como en la superficie. Su piel translúcida y bioluminiscente cambia de color según su estado emocional y les otorga la capacidad de camuflarse. Son expertos en tecnología acuática y creadores de armas y vehículos avanzados diseñados específicamente para ambientes líquidos.",
       crimes: [
         { year: "2015", description: "Liberación de un virus alienígena en una colonia humana en Marte." },
         { year: "2016", description: "Extorsión al embajador galáctico de Tau Ceti." },
@@ -58,8 +61,9 @@ export const aliens:Alien[] = [
       planet: "Pyroxia Prime",
       system: "Sistema Ignarion",
       species: "Ignisphoriano",
-      description:
-        "ynthar fue un general respetado en el ejército Pyroxiano, pero su decisión de priorizar una misión de rescate sobre un ataque estratégico lo llevó a ser degradado. Este acto lo convirtió en un héroe para algunos y en un traidor para otros.",
+      planetDescription:
+        "Un planeta volcánico repleto de ríos de magma, géiseres de azufre y montañas incandescentes que iluminan un cielo perpetuamente rojizo. A pesar de su ambiente hostil, Pyroxia Prime es hogar de una biodiversidad resistente y avanzada. Los habitantes, los Pyroxianos, viven en ciudades flotantes construidas sobre placas termo-resistentes. La sociedad valora la tenacidad y la creatividad, utilizando el calor del planeta como fuente de energía y para la fabricación de sus legendarias armas y armaduras.",
+      speciesDescription: "Criaturas de roca viviente con núcleos de energía térmica en su interior. Son capaces de soportar temperaturas extremas e incluso manipular el calor para generar explosiones controladas o crear barreras de fuego. Sus cuerpos son extremadamente resistentes, pero dependen de ambientes cálidos para sobrevivir; el frío puede debilitarlos considerablemente.",
       crimes: [
         { year: "2017", description: "Robo de secretos militares en el Pentágono." },
         { year: "2018", description: "Destrucción de una planta de energía en Júpiter." },
@@ -80,8 +84,9 @@ export const aliens:Alien[] = [
       planet: "Luminara VII",
       system: "Sirius",
       species: "Noctiluminae",
-      description:
-        "Gorlok era un protector de los bosques bioluminiscentes de Luminara, pero fue traicionado por su propio consejo cuando intentaron sacrificar parte del ecosistema para ganar poder político.",
+      planetDescription:
+        "Un mundo en perpetua penumbra iluminado solo por sus lunas y la bioluminiscencia natural de sus vastos bosques y océanos. El ecosistema depende de hongos gigantes y criaturas que emiten luz propia para sobrevivir. Los Luminarianos han desarrollado una sociedad basada en la conservación del entorno y la exploración de los secretos energéticos de la bioluminiscencia.",
+      speciesDescription: "Seres etéreos de apariencia semitransparente, con filamentos brillantes que recorren sus cuerpos. Son extremadamente sensibles a la luz solar directa y prefieren operar en la oscuridad o bajo fuentes de luz artificial. Tienen una conexión empática con la flora y fauna de su planeta, permitiéndoles comunicarse y colaborar con estas formas de vida.",
       crimes: [
         { year: "2016", description: "Asesinato de un diplomático en la Luna de Io." },
         { year: "2017", description: "Destrucción de un satélite galáctico estratégico." },
@@ -102,8 +107,9 @@ export const aliens:Alien[] = [
       planet: "Xerthion Beta",
       system: "Altair",
       species: "Arenomorfo",
-      description:
-        "Nyssa fue una saqueadora que buscaba artefactos antiguos en Xerthion Beta, pero un incidente lo expuso a un campo magnético que destruyó parte de su cuerpo y lo obligó a buscar ayuda fuera de su planeta.",
+      planetDescription:
+        "Un planeta desértico azotado por vientos huracanados y tormentas de arena. Su superficie está marcada por ruinas de civilizaciones antiguas que alguna vez prosperaron cuando el planeta era más fértil. Los Xerthionianos han desarrollado tecnología avanzada para sobrevivir en este entorno árido, incluyendo trajes bio-energéticos que reciclan recursos vitales.",
+      speciesDescription: "Criaturas con cuerpos compuestos parcialmente de nanomateriales arenosos que pueden reconfigurarse según las necesidades del ambiente. Pueden desintegrar temporalmente partes de su cuerpo para atravesar obstáculos o absorber minerales del suelo para regenerarse. Sin embargo, estas habilidades los hacen vulnerables a los campos magnéticos intensos.",
       crimes: [
         { year: "2015", description: "Venta de información clasificada del Consejo Galáctico." },
         { year: "2017", description: "Robo de datos de la base estelar Andrómeda II." },

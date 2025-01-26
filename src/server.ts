@@ -64,3 +64,11 @@ if (isMainModule(import.meta.url)) {
  * The request handler used by the Angular CLI (dev-server and during build).
  */
 export const reqHandler = createNodeRequestHandler(app);
+export function getPrerenderParams(route: string): Record<string, string[]> | null {
+  if (route === 'alien/:name') {
+    return {
+      name: ['alien1', 'alien2', 'alien3']  // Lista de nombres de alienígenas conocidos
+    };
+  }
+  return null;
+}

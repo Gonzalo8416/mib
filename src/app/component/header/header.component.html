@@ -6,7 +6,7 @@
     <aside>
       <span>Agente {{ agentName }}</span>
       <img src="icons/iconAgent.svg" alt="">
-      <button>
+      <button (click)="toggleProfile()">
         <img src="icons/menu.svg" alt="">
       </button>
     </aside>
@@ -29,4 +29,5 @@
       <p>Foro</p>
     </a>
   </nav>
+  <app-profile [class.show]="showProfile" (closeProfile)="toggleProfile()"></app-profile>
 </header>

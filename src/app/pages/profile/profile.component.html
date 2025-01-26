@@ -1,1 +1,43 @@
-<p>profile works!</p>
+<section class="profile">
+    <div class="profileHeader">
+        <img src="/img/logoMIBHome.svg" alt="">
+        <button (click)="close()">x</button>
+    </div>
+    <div class="profileInfo">
+        <figure>
+            <img src="/icons/iconAgent.svg" alt="">
+        </figure>
+        <div>
+            <h4>Agente  {{agentName}}</h4>
+            <p>Nivel 1</p>
+        </div>
+    </div>
+    <div class="infoProfileDetails">
+        <p><span>Raza:</span> Humano</p>
+        <p><span>Rol:</span> Vigilante</p>
+        <p><span>Arma:</span> Derretidor Mandaloriano</p>
+        <p><span>Experiencia:</span> Especialista en monitoreo de actividad alienígena,  combate básico, seguimiento y neutralización de amenazas extraterrestres de bajo riesgo.
+            Utiliza su Derretidor Mandaloriano para desintegrar tecnología alienígena de bajo nivel y capturar criaturas menores. Sus misiones incluyen infiltrarse en pequeños grupos de extraterrestres infiltrados en la sociedad humana. Tiene una gran capacidad de observación y se adapta rápidamente a nuevas situaciones.</p>
+
+    </div>
+    <button class="logoutShowModal" (click)="isModal()">
+        <img src="/icons/exit.svg" alt="">
+        <p>Desneuralizarme</p>
+    </button>
+    @if(showModal){
+    
+        <div class="logoutModal">
+            <div class="modalContent">
+                <p>¿Estás seguro que deseas ser desneuronalizado?</p>
+                <nav>
+                    <button (click)="isModal()">No</button>
+                    <button (click)="logout()">Si</button>
+                </nav>
+            </div>
+        </div>
+    }
+    @if(showWhiteScreen){
+        <div class="white-screen"></div>
+    }
+</section>
+

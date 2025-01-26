@@ -65,7 +65,7 @@ background: #1d1d1d;
   text-align: left;
   font-size: 1rem;
   font-weight: 300;
-  padding-bottom: 15px;
+  padding: 15px;
   cursor: pointer;
   color: white;
   border-bottom:1px solid #353535;
@@ -85,8 +85,8 @@ background: #1d1d1d;
 }
 .planetaDescription{
   display:flex;
-  flex-direction: column;
   gap:10px;
+  flex-direction: column;
   .planetHead{
     display: flex;
     align-items: end;
@@ -94,6 +94,45 @@ background: #1d1d1d;
     & img{height: 70px;}
     & p{
       font-weight: 200;
+    }
+  }
+  .planetBody{
+    font-weight: 200;
+  }
+}
+.alienDescription{
+  .spiceHead{
+    display: flex;
+    align-items: end;
+    margin-bottom: 10px;
+    gap:10px;
+  }
+  .spiceBody{
+    font-weight: 200;
+  }
+}
+.alienCrimes{
+  margin-bottom: 12px;
+  & p{padding-left: 12px; padding-top: 5px;}
+}
+.alien-details{
+  padding-left: 12px;
+  & h3{
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding-bottom: 4px;
+    margin-bottom: 0.2rem;
+  }
+  & p{
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 0;
+    margin-bottom: 0.2rem;
+    & img{
+      height: 15px;
     }
   }
 }

@@ -1,6 +1,7 @@
 .header{
   width: 100%;
   border-bottom: 1px solid #353535;
+  position: relative;
   .infoHeader{
     padding: 0.9rem;
     display: flex;
@@ -59,4 +60,22 @@ nav a{
 .header nav a.active{
   color:#fff !important;
   border-bottom: 1px solid #216921 ;
+}
+app-profile {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: -400px; /* Oculto fuera de la pantalla */
+  width: 320px; /* Ajusta según el tamaño de tu componente */
+  height: 600px;
+  max-height: 100dvh;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.8);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+app-profile.show {
+  right: 0; /* Se desplaza a la vista */
+  transition: all 0.4s ease-in-out;
 }

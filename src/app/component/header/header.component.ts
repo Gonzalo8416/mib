@@ -1,8 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ProfileComponent } from '../../pages/profile/profile.component';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [ProfileComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -10,7 +11,8 @@ export class HeaderComponent {
   agentName:string|null = '';
   @Input() activeComponent: string = '';
   @Output() activeComponentChange = new EventEmitter<string>();
-  componentAvtibeT: string = ''
+  componentAvtibeT: string = '';
+  showProfile: boolean = false;
 
   ngOnInit(){
     if (typeof window !== 'undefined' && window.localStorage) {
@@ -26,5 +28,8 @@ export class HeaderComponent {
 
   isActiveClass(componentt:string){
     return componentt == this.componentAvtibeT
+  }
+  toggleProfile() {
+    this.showProfile = !this.showProfile;
   }
 }

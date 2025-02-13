@@ -1,18 +1,5 @@
 <main class="home">
-  <app-header [activeComponent]="activeComponent" (activeComponentChange)="activeComponent = $event"></app-header>
-  <section class="content">
-    @if(activeComponent === 'fugitivos'){
-      <app-aliens></app-aliens>
-    }
-    @if(activeComponent === 'agentes'){
-      <div>Este componente se encuentra en construcción</div>
-    }
-    @if(activeComponent === 'historia'){
-      <div>Este componente se encuentra en construcción</div>
-    }
-    @if(activeComponent === 'foro'){
-      <div>Este componente se encuentra en construcción</div>
-    }
-  </section>
+  <app-header></app-header>
+  <router-outlet></router-outlet>
 </main>
 

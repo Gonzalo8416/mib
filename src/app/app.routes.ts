@@ -5,6 +5,10 @@ import { IntroComponent } from './pages/intro/intro.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { AlienComponent } from './pages/alien/alien.component';
+import { AliensComponent } from './component/aliens/aliens.component';
+import { HistoryComponent } from './component/history/history.component';
+import { AgentsComponent } from './component/agents/agents.component';
+import { ForoComponent } from './component/foro/foro.component';
 import { aliens } from './util/aliens.util';
 
 export const routes: Routes = [
@@ -15,9 +19,16 @@ export const routes: Routes = [
   // pathMatch: 'full',
  },
  {
-  path:'home',
-  component: HomeComponent,
- },
+  path: 'home',
+  component: HomeComponent, // This will be the parent component
+  children: [ // Define child routes here
+    { path: 'fugitivos', component: AliensComponent },
+    { path: 'agentes', component: AgentsComponent },
+    { path: 'historia', component: HistoryComponent },
+    { path: 'foro', component: ForoComponent },
+    { path: '', redirectTo: 'fugitivos', pathMatch: 'full' }, // Default child route
+  ]
+},
  {
   path:'intro',
   component: IntroComponent,
